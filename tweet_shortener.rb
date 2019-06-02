@@ -29,7 +29,10 @@ def word_substituter(tweet)
       x
     end
     string = array2.join(" ")
-    puts string
     return string
 end
-word_substituter("Hey guys, can anyone teach me how to be cool? I really want to be the best at everything, you know what I mean? Tweeting is super fun you guys!!!!")
+def bulk_tweet_shortener(tweetarray)
+  tweetarray.each do |x| 
+    puts word_substituter(x)  
+  end
+end
