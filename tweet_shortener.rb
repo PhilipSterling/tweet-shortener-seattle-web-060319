@@ -16,6 +16,7 @@ def dictionary
 end
 def word_substituter(tweet)
     sub_words = dictionary
+    puts sub_words
     array = tweet.split(" ")
     returnarray = array.map do |x|
       sub_words.each do |key, value|
@@ -27,3 +28,4 @@ def word_substituter(tweet)
     string = returnarray.join(" ")
     return string
 end
+word_substituter
