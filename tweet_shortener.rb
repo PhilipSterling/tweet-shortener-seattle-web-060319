@@ -16,15 +16,13 @@ def dictionary
 end
 def word_substituter(tweet)
     sub_words = dictionary
+    
     array = tweet.split(" ")
 
     array.map! do |x|
-      sub_words.each do |key, value|
+      sub_words.each do |key, value| 
         if(x == key.to_s)
-          puts key
-          puts x
-          x = value
-          puts x
+          x = sub_words[key]
         end
       end
     end
