@@ -16,14 +16,14 @@ def dictionary
 end
 def word_substituter(tweet)
     sub_words = dictionary
-    
+    testarray = sub_words.keys
     array = tweet.split(" ")
 
     array.map! do |x|
-      testarray = sub_words.keys
       i = 0
       for i in 0..testarray.length-1 do 
           puts testarray[i]
+          puts x
         if(x == testarray[i])
           puts "???"
           x = sub_words[testarray[i]]
