@@ -22,7 +22,6 @@ def word_substituter(tweet)
     array.map! do |x|
       i = 0
       for i in 0..testarray.length-1 do 
-          puts testarray[i]
           puts x
         if(x == testarray[i])
           puts "???"
