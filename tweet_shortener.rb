@@ -27,6 +27,7 @@ def word_substituter(tweet)
           x = sub_words[testarray[i]]
           puts "replaced with: " + x
         end
+        x
       end
     end
     string = array2.join(" ")
