@@ -28,4 +28,4 @@ def word_substituter(tweet)
     string = returnarray.join(" ")
     return string
 end
-word_substituter
+word_substituter("")
