@@ -36,3 +36,5 @@ def bulk_tweet_shortener(tweetarray)
     puts word_substituter(x)  
   end
 end
+def selective_tweet_shortener(tweet)
+end
