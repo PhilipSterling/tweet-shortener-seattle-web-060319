@@ -6,7 +6,6 @@ def dictionary
     :two => "2",
     :too => "2",
     :for => "4",
-    :For => "4",
     :four => "4",
     :be => "b",
     :you => "u",
@@ -23,7 +22,7 @@ def word_substituter(tweet)
     array2 = array.collect do |x|
       i = 0
       for i in 0..testarray.length-1 do 
-        if(x == testarray[i].to_s)
+        if(x.casecmp?(testarray[i].to_s))
           x = sub_words[testarray[i]]
         end
       end
