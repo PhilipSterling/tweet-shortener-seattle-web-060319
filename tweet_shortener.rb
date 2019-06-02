@@ -23,7 +23,7 @@ def word_substituter(tweet)
       i = 0
       for i in 0..testarray.length-1 do 
         if(x == testarray[i].to_s)
-          puts x
+          puts "removing: " + x
           x = sub_words[testarray[i]]
           puts "replaced with: " + x
         end
