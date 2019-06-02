@@ -23,6 +23,7 @@ def word_substituter(tweet)
         if(x == key.to_s)
           puts key
           x = value
+          puts x
         end
       end
     end
