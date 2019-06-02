@@ -7,5 +7,9 @@ def dictionary
     :too => "hi"
     :for => "hi"
     :four => "hi"
+    :be => "hi"
+    :four => "hi"
+    :four => "hi"
+    :four => "hi"
   }
 end
