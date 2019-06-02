@@ -18,7 +18,6 @@ def word_substituter(tweet)
     sub_words = dictionary
     array = tweet.split(" ")
     array.map! do |x|
-      binding.pry
       sub_words.each do |key, value|
         if(x == key.to_s)
           x = value
