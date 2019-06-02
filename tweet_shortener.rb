@@ -29,6 +29,7 @@ def word_substituter(tweet)
         end
         x
       end
+      x
     end
     string = array2.join(" ")
     return string
