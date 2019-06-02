@@ -18,15 +18,15 @@ def word_substituter(tweet)
     sub_words = dictionary
     array = tweet.split(" ")
     puts array
-    returnarray = array.map do |x|
+    array.map! do |x|
       sub_words.each do |key, value|
         if(x == key.to_s)
+          puts key
           x = value
         end
       end
     end
-    puts returnarray
-    string = returnarray.join(" ")
+    string = array.join(" ")
     return string
 end
 word_substituter("Hey guys, can anyone teach me how to be cool? I really want to be the best at everything, you know what I mean? Tweeting is super fun you guys!!!!")
