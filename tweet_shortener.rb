@@ -19,7 +19,7 @@ def word_substituter(tweet)
     testarray = sub_words.keys
     array = tweet.split(" ")
 
-    array.each do |x|
+    array2 = array.collect do |x|
       i = 0
       for i in 0..testarray.length-1 do 
         if(x == testarray[i].to_s)
@@ -29,7 +29,7 @@ def word_substituter(tweet)
         end
       end
     end
-    string = array.join(" ")
+    string = array2.join(" ")
     return string
 end
 word_substituter("Hey guys, can anyone teach me how to be cool? I really want to be the best at everything, you know what I mean? Tweeting is super fun you guys!!!!")
