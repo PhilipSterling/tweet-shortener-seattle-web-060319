@@ -22,10 +22,10 @@ def word_substituter(tweet)
     array.map! do |x|
       i = 0
       for i in 0..testarray.length-1 do 
-          puts x
-          puts testarray[i]
         if(x == testarray[i].to_s)
+          puts x
           x = sub_words[testarray[i]]
+          puts "replaced" + x
         end
       end
     end
