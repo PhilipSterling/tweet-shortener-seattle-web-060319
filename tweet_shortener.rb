@@ -21,6 +21,7 @@ def word_substituter(tweet)
       sub_words.each do |key, value|
         if(x == key.to_s)
           x = value
+        end
       end
     end
     string = array.join(" ")
