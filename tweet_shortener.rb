@@ -20,11 +20,6 @@ def word_substituter(tweet)
     array = tweet.split(" ")
 
     array.map! do |x|
-      sub_words.each do |key, value| 
-        if(x == key.to_s)
-          x = sub_words[key]
-        end
-      end
       testarray = sub_words.keys
       for i in 0..testarray.length-1 do 
         if(x == testarray[i])
