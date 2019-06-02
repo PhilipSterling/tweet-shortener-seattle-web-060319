@@ -24,7 +24,7 @@ def word_substituter(tweet)
       for i in 0..testarray.length-1 do 
           puts x
           puts testarray[i]
-        if(x == testarray[i])
+        if(x == testarray[i].to_s)
           puts "???"
         end
       end
