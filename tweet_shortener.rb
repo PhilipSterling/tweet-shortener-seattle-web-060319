@@ -26,6 +26,9 @@ def word_substituter(tweet)
         end
       end
       testarray = sub_words.keys
+      for i in 1..testarray.length do 
+        
+      end
     end
     string = array.join(" ")
     return string
