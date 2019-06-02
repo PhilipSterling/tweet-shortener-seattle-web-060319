@@ -19,7 +19,7 @@ def word_substituter(tweet)
     testarray = sub_words.keys
     array = tweet.split(" ")
 
-    array.map! do |x|
+    array.each do |x|
       i = 0
       for i in 0..testarray.length-1 do 
         if(x == testarray[i].to_s)
