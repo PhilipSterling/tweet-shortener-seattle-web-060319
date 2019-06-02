@@ -23,7 +23,7 @@ def word_substituter(tweet)
       testarray = sub_words.keys
       for i in 0..testarray.length-1 do 
         if(x == testarray[i])
-          x = sub_words(testarray[i])
+          x = sub_words[testarray[i]]
         end
       end
     end
