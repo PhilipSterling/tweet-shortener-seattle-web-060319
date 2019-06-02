@@ -26,7 +26,6 @@ def word_substituter(tweet)
           puts testarray[i]
         if(x == testarray[i])
           puts "???"
-          x = sub_words[testarray[i]]
         end
       end
     end
