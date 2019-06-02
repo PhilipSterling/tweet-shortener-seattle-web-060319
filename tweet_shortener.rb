@@ -21,6 +21,7 @@ def word_substituter(tweet)
 
     array.map! do |x|
       testarray = sub_words.keys
+      i = 0
       for i in 0..testarray.length-1 do 
         if(x == testarray[i])
           x = sub_words[testarray[i]]
