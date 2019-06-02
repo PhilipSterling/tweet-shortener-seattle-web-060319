@@ -14,3 +14,6 @@ def dictionary
   }
   return replacements
 end
+def word_substituter(tweet)
+    sub_words = dictionary
+end
